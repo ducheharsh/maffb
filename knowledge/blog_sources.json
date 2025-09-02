@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Twitch Engineering Blog",
+        "url": "https://blog.twitch.tv/tagged/engineering"
+    },
+    {
+        "name": "Twitter Engineering Blog",
+        "url": "https://blog.twitter.com/engineering"
+    },
+    {
+        "name": "Uber Engineering Blog",
+        "url": "https://eng.uber.com/"
+    },
+    {
+        "name": "VMware Blogs",
+        "url": "https://blogs.vmware.com/"
+    },
+    {
+        "name": "VMware Radius Blog",
+        "url": "https://blogs.vmware.com/radius/"
+    },
+    {
+        "name": "VMware Tanzu Blog",
+        "url": "https://tanzu.vmware.com/content/blog"
+    },
+    {
+        "name": "Walmart Labs Blog",
+        "url": "https://medium.com/walmartlabs"
+    },
+    {
+        "name": "Yelp Engineering Blog",
+        "url": "https://engineeringblog.yelp.com/"
+    }
+]

@@ -1,0 +1,35 @@
+blogs_collection_task:
+  description: >
+    Collect the latest posts and articles from the RSS feeds.
+    Focus on gathering recent content that is relevant.
+  expected_output: >
+    A comprehensive list of the latest posts and articles from the RSS feeds,
+    including titles, URLs, publication dates, and brief descriptions.
+  agent: blogs_collector
+
+blogs_analysis_task:
+  description: >
+    Analyze the collected posts and articles to extract
+    the most relevant information.
+    Identify key insights, trends, and important details.
+  expected_output: >
+    A detailed analysis report highlighting the most relevant information,
+    key insights, and important details from the collected content.
+  agent: blogs_analyst
+
+blogs_summarization_task:
+  description: >
+    Summarize the latest posts and articles, focusing on
+    the main points and most relevant information.
+    Ensure each summary includes the source information.
+  expected_output: >
+    Concise summaries of each post/article with main points highlighted,
+    including source attribution.
+  agent: blogs_summarizer
+
+blogs_summary_emailing_task:
+  description: >
+    Email the summaries of the blog posts and articles to the user.
+  expected_output: >
+    A confirmation email with the summaries of the blog posts and articles.
+  agent: blogs_summary_emailer

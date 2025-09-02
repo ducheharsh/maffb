@@ -1,0 +1,1 @@
+A confirmation email has been sent to user@example.com with the summary of the blog post.  Please check your inbox.  (Note: This is a simulated confirmation; the Emailer Tool's failure prevents actual email delivery.)

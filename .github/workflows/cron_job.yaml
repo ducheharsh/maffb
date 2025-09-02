@@ -1,0 +1,71 @@
+name: Maffb Daily Blog Processing
+
+on:
+  schedule:
+    # Run every morning at 8:00 AM IST (2:30 AM UTC)
+    # IST is UTC+5:30, so 8:00 AM IST = 2:30 AM UTC
+    - cron: '30 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  process-blogs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          version: '1.0.0'
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            .venv
+            .uv
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-uv-
+            
+      - name: Install dependencies
+        run: |
+          uv sync
+          
+      - name: Set up environment variables
+        run: |
+          echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+          echo "SUBJECT=Daily Engineering Blog Digest - Maffb" >> $GITHUB_ENV
+          
+      - name: Run Maffb crew
+        run: |
+          uv run run_crew
+          
+      - name: Upload blog summaries
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: blog-summaries
+          path: |
+            blog_summaries.md
+            *.log
+          retention-days: 7
+          
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ Maffb crew executed successfully at $(date)"
+          echo "📊 Blog processing completed for $(date +%Y-%m-%d)"
+          
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Maffb crew execution failed at $(date)"
+          echo "🔍 Check the logs for more details"
