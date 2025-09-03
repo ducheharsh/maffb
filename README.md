@@ -1,4 +1,4 @@
-# Maffb - AI-Powered Blog Content Processor
+# Maffb - Multi-Agent Fleet for Blogs
 
 Maffb is an intelligent blog content processing system built with CrewAI that automatically collects, analyzes, and summarizes engineering blog posts from RSS feeds.
 
