@@ -57,6 +57,10 @@ jobs:
           if [ -n "${{ secrets.FROM_EMAIL }}" ]; then
             echo "FROM_EMAIL=${{ secrets.FROM_EMAIL }}" >> $GITHUB_ENV
           fi
+          # Optional: force EU data residency for EU subusers
+          if [ -n "${{ secrets.SENDGRID_EU_RESIDENCY }}" ]; then
+            echo "SENDGRID_EU_RESIDENCY=${{ secrets.SENDGRID_EU_RESIDENCY }}" >> $GITHUB_ENV
+          fi
           
       - name: Run Maffb crew
         run: |
