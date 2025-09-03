@@ -104,6 +104,7 @@ uv run run_crew
 ### Environment Variables
 
 - `SENDGRID_API_KEY`: Your SendGrid API key for email functionality
+- `FROM_EMAIL`: Verified sender email address in SendGrid
 - `SUBJECT`: Custom email subject line (optional)
 
 ## Output

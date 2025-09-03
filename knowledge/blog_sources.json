@@ -1,5 +1,161 @@
 [
     {
+        "name": "Microsoft Engineering Blog",
+        "url": "https://devblogs.microsoft.com/"
+    },
+    {
+        "name": "MongoDB Blog",
+        "url": "https://www.mongodb.com/blog"
+    },
+    {
+        "name": "Mozilla Hacks Blog",
+        "url": "https://hacks.mozilla.org/"
+    },
+    {
+        "name": "MuleSoft Blog",
+        "url": "https://blogs.mulesoft.com/"
+    },
+    {
+        "name": "Netflix Tech Blog",
+        "url": "https://netflixtechblog.com/"
+    },
+    {
+        "name": "Nordstrom Technology Blog",
+        "url": "https://technology.nordstrom.com/"
+    },
+    {
+        "name": "Nutanix Blog",
+        "url": "https://www.nutanix.com/blog"
+    },
+    {
+        "name": "Nvidia Blog",
+        "url": "https://blogs.nvidia.com/blog/"
+    },
+    {
+        "name": "NVIDIA Developer Blog",
+        "url": "https://developer.nvidia.com/blog"
+    },
+    {
+        "name": "Oculus Blog",
+        "url": "https://www.oculus.com/blog/"
+    },
+    {
+        "name": "OVHcloud Blog",
+        "url": "https://www.ovh.com/world/blog/"
+    },
+    {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/"
+    },
+    {
+        "name": "Palantir Blog",
+        "url": "https://www.palantir.com/blog/"
+    },
+    {
+        "name": "PayPal Engineering Blog",
+        "url": "https://www.paypal-engineering.com/"
+    },
+    {
+        "name": "Pinterest Engineering Blog",
+        "url": "https://medium.com/@Pinterest_Engineering"
+    },
+    {
+        "name": "Quora Engineering Blog",
+        "url": "https://www.quora.com/q/quoraengineering"
+    },
+    {
+        "name": "Rackspace Technology Blog",
+        "url": "https://blog.rackspace.com/"
+    },
+    {
+        "name": "Red Hat Blog",
+        "url": "https://www.redhat.com/en/blog"
+    },
+    {
+        "name": "Red Hat Developer Blog",
+        "url": "https://developers.redhat.com/blog/"
+    },
+    {
+        "name": "Reddit Engineering Blog",
+        "url": "https://redditblog.com/"
+    },
+    {
+        "name": "Riot Games Engineering",
+        "url": "https://engineering.riotgames.com/"
+    },
+    {
+        "name": "Salesforce Developer Blog",
+        "url": "https://developer.salesforce.com/blogs/"
+    },
+    {
+        "name": "Salesforce Engineering Blog",
+        "url": "https://engineering.salesforce.com/"
+    },
+    {
+        "name": "SAP Blogs",
+        "url": "https://blogs.sap.com/"
+    },
+    {
+        "name": "SAP Community Blogs",
+        "url": "https://community.sap.com/topics/blogs"
+    },
+    {
+        "name": "Shopify Engineering Blog",
+        "url": "https://engineering.shopify.com/"
+    },
+    {
+        "name": "Slack Engineering Blog",
+        "url": "https://slack.engineering/"
+    },
+    {
+        "name": "Snap Engineering Blog",
+        "url": "https://eng.snap.com/"
+    },
+    {
+        "name": "Splice Engineering Blog",
+        "url": "https://splice.com/blog/"
+    },
+    {
+        "name": "Spotify Engineering Blog",
+        "url": "https://engineering.atspotify.com/"
+    },
+    {
+        "name": "Square Engineering Blog",
+        "url": "https://developer.squareup.com/blog"
+    },
+    {
+        "name": "SquareSpace Engineering Blog",
+        "url": "https://engineering.squarespace.com/"
+    },
+    {
+        "name": "Stripe Engineering Blog",
+        "url": "https://stripe.com/blog/engineering"
+    },
+    {
+        "name": "Symantec Blogs",
+        "url": "https://symantec-enterprise-blogs.security.com/"
+    },
+    {
+        "name": "Target Tech Blog",
+        "url": "https://tech.target.com/"
+    },
+    {
+        "name": "The New York Times Engineering Blog",
+        "url": "https://open.nytimes.com/tagged/engineering"
+    },
+    {
+        "name": "ThoughtWorks Insights",
+        "url": "https://www.thoughtworks.com/insights"
+    },
+    {
+        "name": "Trello Blog",
+        "url": "https://blog.trello.com/"
+    },
+    {
+        "name": "Twilio Engineering Blog",
+        "url": "https://www.twilio.com/blog"
+    },
+    {
         "name": "Twitch Engineering Blog",
         "url": "https://blog.twitch.tv/tagged/engineering"
     },
@@ -30,5 +186,13 @@
     {
         "name": "Yelp Engineering Blog",
         "url": "https://engineeringblog.yelp.com/"
+    },
+    {
+        "name": "Zendesk Engineering Blog",
+        "url": "https://engineering.zendesk.com/"
+    },
+    {
+        "name": "Zillow Engineering Blog",
+        "url": "https://www.zillowgroup.com/tech/"
     }
 ]

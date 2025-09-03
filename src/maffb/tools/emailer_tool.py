@@ -32,6 +32,11 @@ class EmailerTool(BaseTool):
         env_subject = os.getenv("SUBJECT")
         if env_subject:
             self.subject = env_subject
+        
+        # Override from_email if environment variable is set
+        env_from_email = os.getenv("FROM_EMAIL")
+        if env_from_email:
+            self.from_email = env_from_email
 
     def _run(self, blog_summaries: Optional[List[Dict[str, Any]]] = None, custom_subject: Optional[str] = None) -> str:
         """
@@ -96,7 +101,11 @@ class EmailerTool(BaseTool):
                         success_count += 1
                         print(f"✅ Email sent successfully to {recipient_email} ({recipient_name})")
                     else:
-                        print(f"❌ Failed to send email to {recipient_email} ({recipient_name}): {response.status_code}")
+                        try:
+                            response_body = response.body.decode("utf-8") if hasattr(response.body, "decode") else str(response.body)
+                        except Exception:
+                            response_body = "<unreadable body>"
+                        print(f"❌ Failed to send email to {recipient_email} ({recipient_name}): {response.status_code} - {response_body}")
                         
                 except Exception as e:
                     print(f"❌ Error sending email to {recipient_email} ({recipient_name}): {str(e)}")
