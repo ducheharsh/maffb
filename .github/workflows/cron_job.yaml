@@ -54,6 +54,9 @@ jobs:
           if [ -n "${{ secrets.MODEL }}" ]; then
             echo "MODEL=${{ secrets.MODEL }}" >> $GITHUB_ENV
           fi
+          if [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+            echo "FROM_EMAIL=${{ secrets.FROM_EMAIL }}" >> $GITHUB_ENV
+          fi
           
       - name: Run Maffb crew
         run: |
