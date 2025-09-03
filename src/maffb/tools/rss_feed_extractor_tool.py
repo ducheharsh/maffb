@@ -1,6 +1,6 @@
 from crewai.tools import BaseTool
 from typing import Type, List, Dict, Any
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 import requests
 import json
 from pathlib import Path
@@ -19,6 +19,9 @@ class RssFeedExtractorTool(BaseTool):
         "Extract RSS feeds from engineering blogs and return the latest posts with content."
     )
     args_schema: Type[BaseModel] = RssFeedExtractorToolInput
+    
+    # Pydantic configuration
+    model_config = ConfigDict(arbitrary_types_allowed=True)
     
     # Define session as a proper Pydantic field
     session: requests.Session = Field(default_factory=requests.Session)

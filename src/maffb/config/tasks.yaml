@@ -33,3 +33,14 @@ blogs_summary_emailing_task:
   expected_output: >
     A confirmation email with the summaries of the blog posts and articles.
   agent: blogs_summary_emailer
+
+readme_update_task:
+  description: >
+    Update the README with the latest daily blog summary, ensuring beautiful markdown formatting
+    and proper organization. The summary should be added to the Daily Blog Summary section
+    with today's date and proper formatting.
+  expected_output: >
+    The README has been successfully updated with the latest daily blog summary,
+    maintaining consistent formatting and organization. The summary includes today's date,
+    proper markdown structure, and is properly integrated into the existing README.
+  agent: readme_updater

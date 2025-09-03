@@ -7,7 +7,7 @@ from pathlib import Path
 import json
 from datetime import datetime
 from jinja2 import Template
-from pydantic import Field
+from pydantic import Field, ConfigDict
 from typing import Optional, List, Dict, Any
 
 
@@ -15,11 +15,16 @@ class EmailerTool(BaseTool):
     name: str = "Emailer Tool"
     description: str = "Send blog summaries via email using HTML templates to emailer list recipients"
     
+    # Pydantic configuration
+    model_config = ConfigDict(arbitrary_types_allowed=True)
+    
     # Define all attributes as Pydantic fields
-    sg: Optional[sendgrid.SendGridAPIClient] = Field(default=None)
     from_email: str = Field(default="blogs@harshduche.com")
     subject: str = Field(default="Your Daily Blog Summaries - Maffb")
     eu_residency: bool = Field(default=False)
+    
+    # Internal attributes (not part of Pydantic schema)
+    sg: Optional[sendgrid.SendGridAPIClient] = None
     
     def __init__(self, **data):
         super().__init__(**data)

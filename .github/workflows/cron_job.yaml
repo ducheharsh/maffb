@@ -66,6 +66,14 @@ jobs:
         run: |
           uv run run_crew
           
+      - name: Commit and push README updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "📝 Update README with daily blog summary - $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git push || echo "No changes to push"
+          
       - name: Upload blog summaries
         uses: actions/upload-artifact@v4
         if: always()

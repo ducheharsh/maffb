@@ -2,6 +2,8 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from .tools.rss_feed_extractor_tool import RssFeedExtractorTool
 from .tools.emailer_tool import EmailerTool
+from .tools.markdown_formatter_tool import MarkdownFormatterTool
+from .tools.readme_updater_tool import ReadmeUpdaterTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -38,6 +40,15 @@ class Maffb():
     def blogs_summarizer(self) -> Agent:
         return Agent(
             config=self.agents_config['blogs_summarizer'],
+            verbose=True,   
+            tools=[MarkdownFormatterTool()]
+        )
+
+    @agent
+    def readme_updater(self) -> Agent:
+        return Agent(
+            config=self.agents_config['readme_updater'],
+            tools=[ReadmeUpdaterTool(), MarkdownFormatterTool()],
             verbose=True
         )
 
@@ -76,6 +87,13 @@ class Maffb():
         return Task(
             config=self.tasks_config['blogs_summary_emailing_task'],
             output_file='blog_summaries.md'
+        )
+
+    @task
+    def readme_update_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['readme_update_task'],
+            output_file='README.md'
         )
 
     @crew
