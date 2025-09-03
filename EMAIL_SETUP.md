@@ -10,6 +10,11 @@ pip install -r requirements.txt
 2. **Set environment variable:**
 ```bash
 export SENDGRID_API_KEY="your_sendgrid_api_key_here"
+export FROM_EMAIL="your_verified_sender@example.com"   # must be verified in SendGrid
+# Optional: subject override
+export SUBJECT="Daily Engineering Blog Digest - Maffb"
+# Optional: EU data residency (for EU subusers)
+export SENDGRID_EU_RESIDENCY=true
 ```
 
 3. **Verify emailer list:**
@@ -36,6 +41,7 @@ The system will send emails to all recipients in `knowledge/emailer_list.json`
 4. Set the API key as environment variable
    - Local: `export SENDGRID_API_KEY="<your_key>"`
    - GitHub Actions: add `SENDGRID_API_KEY` in repo Settings → Secrets and variables → Actions
+5. Optionally set `SENDGRID_EU_RESIDENCY=true` if you must send via EU data residency
 
 ## Configure sender address
 
@@ -52,6 +58,11 @@ Run the crew to test email functionality:
 python -m src.maffb.main
 ```
 
+Or run a quick smoke test that sends a single test email to all recipients in `knowledge/emailer_list.json`:
+```bash
+python -m src.maffb.tools.emailer_tool
+```
+
 If you see HTTP 401/403 errors:
 - 401 Unauthorized: The API key is missing/invalid. Re-check `SENDGRID_API_KEY` value and scope.
 - 403 Forbidden: The `FROM_EMAIL` sender is not verified or lacks permission.
@@ -60,3 +71,4 @@ Quick checks:
 - `echo ${#SENDGRID_API_KEY}` should be > 0; key typically starts with `SG.`
 - Ensure `FROM_EMAIL` matches a verified Single Sender or your verified domain.
 - In GitHub Actions, confirm the secret exists and is exported in the workflow.
+ - Ensure `knowledge/emailer_list.json` contains at least one recipient with an `email` field.

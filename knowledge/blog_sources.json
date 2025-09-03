@@ -1,7 +1,7 @@
 [
     {
         "name": "Microsoft Engineering Blog",
-        "url": "https://devblogs.microsoft.com/"
+        "url": "https://devblogs.microsoft.com"
     },
     {
         "name": "MongoDB Blog",
@@ -9,19 +9,19 @@
     },
     {
         "name": "Mozilla Hacks Blog",
-        "url": "https://hacks.mozilla.org/"
+        "url": "https://hacks.mozilla.org"
     },
     {
         "name": "MuleSoft Blog",
-        "url": "https://blogs.mulesoft.com/"
+        "url": "https://blogs.mulesoft.com"
     },
     {
         "name": "Netflix Tech Blog",
-        "url": "https://netflixtechblog.com/"
+        "url": "https://netflixtechblog.com"
     },
     {
         "name": "Nordstrom Technology Blog",
-        "url": "https://technology.nordstrom.com/"
+        "url": "https://technology.nordstrom.com"
     },
     {
         "name": "Nutanix Blog",
@@ -29,7 +29,7 @@
     },
     {
         "name": "Nvidia Blog",
-        "url": "https://blogs.nvidia.com/blog/"
+        "url": "https://blogs.nvidia.com/blog"
     },
     {
         "name": "NVIDIA Developer Blog",
@@ -37,23 +37,23 @@
     },
     {
         "name": "Oculus Blog",
-        "url": "https://www.oculus.com/blog/"
+        "url": "https://www.oculus.com/blog"
     },
     {
         "name": "OVHcloud Blog",
-        "url": "https://www.ovh.com/world/blog/"
+        "url": "https://www.ovh.com/world/blog"
     },
     {
         "name": "PagerDuty Blog",
-        "url": "https://www.pagerduty.com/blog/"
+        "url": "https://www.pagerduty.com/blog"
     },
     {
         "name": "Palantir Blog",
-        "url": "https://www.palantir.com/blog/"
+        "url": "https://www.palantir.com/blog"
     },
     {
         "name": "PayPal Engineering Blog",
-        "url": "https://www.paypal-engineering.com/"
+        "url": "https://www.paypal-engineering.com"
     },
     {
         "name": "Pinterest Engineering Blog",
@@ -65,7 +65,7 @@
     },
     {
         "name": "Rackspace Technology Blog",
-        "url": "https://blog.rackspace.com/"
+        "url": "https://blog.rackspace.com"
     },
     {
         "name": "Red Hat Blog",
@@ -73,27 +73,27 @@
     },
     {
         "name": "Red Hat Developer Blog",
-        "url": "https://developers.redhat.com/blog/"
+        "url": "https://developers.redhat.com/blog"
     },
     {
         "name": "Reddit Engineering Blog",
-        "url": "https://redditblog.com/"
+        "url": "https://redditblog.com"
     },
     {
         "name": "Riot Games Engineering",
-        "url": "https://engineering.riotgames.com/"
+        "url": "https://engineering.riotgames.com"
     },
     {
         "name": "Salesforce Developer Blog",
-        "url": "https://developer.salesforce.com/blogs/"
+        "url": "https://developer.salesforce.com/blogs"
     },
     {
         "name": "Salesforce Engineering Blog",
-        "url": "https://engineering.salesforce.com/"
+        "url": "https://engineering.salesforce.com"
     },
     {
         "name": "SAP Blogs",
-        "url": "https://blogs.sap.com/"
+        "url": "https://blogs.sap.com"
     },
     {
         "name": "SAP Community Blogs",
@@ -101,23 +101,23 @@
     },
     {
         "name": "Shopify Engineering Blog",
-        "url": "https://engineering.shopify.com/"
+        "url": "https://engineering.shopify.com"
     },
     {
         "name": "Slack Engineering Blog",
-        "url": "https://slack.engineering/"
+        "url": "https://slack.engineering"
     },
     {
         "name": "Snap Engineering Blog",
-        "url": "https://eng.snap.com/"
+        "url": "https://eng.snap.com"
     },
     {
         "name": "Splice Engineering Blog",
-        "url": "https://splice.com/blog/"
+        "url": "https://splice.com/blog"
     },
     {
         "name": "Spotify Engineering Blog",
-        "url": "https://engineering.atspotify.com/"
+        "url": "https://engineering.atspotify.com"
     },
     {
         "name": "Square Engineering Blog",
@@ -125,7 +125,7 @@
     },
     {
         "name": "SquareSpace Engineering Blog",
-        "url": "https://engineering.squarespace.com/"
+        "url": "https://engineering.squarespace.com"
     },
     {
         "name": "Stripe Engineering Blog",
@@ -133,11 +133,11 @@
     },
     {
         "name": "Symantec Blogs",
-        "url": "https://symantec-enterprise-blogs.security.com/"
+        "url": "https://symantec-enterprise-blogs.security.com"
     },
     {
         "name": "Target Tech Blog",
-        "url": "https://tech.target.com/"
+        "url": "https://tech.target.com"
     },
     {
         "name": "The New York Times Engineering Blog",
@@ -149,7 +149,7 @@
     },
     {
         "name": "Trello Blog",
-        "url": "https://blog.trello.com/"
+        "url": "https://blog.trello.com"
     },
     {
         "name": "Twilio Engineering Blog",
@@ -165,15 +165,15 @@
     },
     {
         "name": "Uber Engineering Blog",
-        "url": "https://eng.uber.com/"
+        "url": "https://eng.uber.com"
     },
     {
         "name": "VMware Blogs",
-        "url": "https://blogs.vmware.com/"
+        "url": "https://blogs.vmware.com"
     },
     {
         "name": "VMware Radius Blog",
-        "url": "https://blogs.vmware.com/radius/"
+        "url": "https://blogs.vmware.com/radius"
     },
     {
         "name": "VMware Tanzu Blog",
@@ -185,14 +185,14 @@
     },
     {
         "name": "Yelp Engineering Blog",
-        "url": "https://engineeringblog.yelp.com/"
+        "url": "https://engineeringblog.yelp.com"
     },
     {
         "name": "Zendesk Engineering Blog",
-        "url": "https://engineering.zendesk.com/"
+        "url": "https://engineering.zendesk.com"
     },
     {
         "name": "Zillow Engineering Blog",
-        "url": "https://www.zillowgroup.com/tech/"
+        "url": "https://www.zillowgroup.com/tech"
     }
 ]
