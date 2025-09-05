@@ -7,6 +7,9 @@ on:
     - cron: '30 2 * * *'
   workflow_dispatch: # Allow manual triggering
 
+permissions:
+  contents: write
+
 jobs:
   process-blogs:
     runs-on: ubuntu-latest
@@ -67,6 +70,7 @@ jobs:
           uv run run_crew
           
       - name: Commit and push README updates
+        continue-on-error: true
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
