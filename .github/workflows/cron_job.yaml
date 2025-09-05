@@ -71,8 +71,12 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git commit -m "📝 Update README with daily blog summary - $(date +%Y-%m-%d)" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📝 Update README with daily blog summary - $(date +%Y-%m-%d)"
+            git push
+          fi
           
       - name: Upload blog summaries
         uses: actions/upload-artifact@v4
