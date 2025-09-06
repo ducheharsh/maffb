@@ -20,9 +20,12 @@ def run():
         print("🚀 Starting Maffb crew for blog content processing...")
         result = Maffb().crew().kickoff()
         print("✅ Crew execution completed successfully!")
+        print(f"📊 Crew result type: {type(result)}")
         return result
     except Exception as e:
         print(f"❌ An error occurred while running the crew: {e}")
+        import traceback
+        traceback.print_exc()
         raise Exception(f"An error occurred while running the crew: {e}")
 
 
