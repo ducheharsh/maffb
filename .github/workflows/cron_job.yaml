@@ -68,14 +68,11 @@ jobs:
       - name: Run Maffb crew
         run: |
           echo "🚀 Starting crew execution..."
-          uv run run_crew
-          EXIT_CODE=$?
-          echo "🎯 Crew execution completed with exit code: $EXIT_CODE"
-          if [ $EXIT_CODE -ne 0 ]; then
-            echo "❌ Crew execution failed with exit code $EXIT_CODE"
-            exit $EXIT_CODE
-          else
+          if uv run run_crew; then
             echo "✅ Crew execution succeeded"
+          else
+            echo "❌ Crew execution failed"
+            exit 1
           fi
           
       - name: Commit and push README updates

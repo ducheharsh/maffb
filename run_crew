@@ -19,7 +19,7 @@ if __name__ == "__main__":
     try:
         result = run()
         print("\n✅ Crew execution completed successfully!")
-        print(f"📊 Result: {result}")
+        print(f"📊 Result type: {type(result)}")
         print("🎯 Exiting with success code 0")
         sys.exit(0)  # Explicitly exit with success code
     except Exception as e:

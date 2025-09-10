@@ -26,7 +26,7 @@ def run():
         print(f"❌ An error occurred while running the crew: {e}")
         import traceback
         traceback.print_exc()
-        raise Exception(f"An error occurred while running the crew: {e}")
+        raise
 
 
 def train():
